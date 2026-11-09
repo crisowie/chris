@@ -39,10 +39,25 @@
         padding: 0;
       }
       html {
-        background: #1f1f24;
+        scrollbar-width: thin;
+        scrollbar-color: #2c2c32 transparent;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #2c2c32;
+        border-radius: 8px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #3a3a40;
       }
       body {
         background: linear-gradient(to bottom, #09090b 0%, #1f1f24 100%);
+        background-color: #1f1f24;
         color: var(--text);
         font-family:
           "Space Grotesk",
