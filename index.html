@@ -89,6 +89,14 @@
         font-size: 28px;
         font-weight: 700;
         letter-spacing: -0.02em;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .verified {
+        width: 22px;
+        height: 22px;
+        flex: 0 0 22px;
       }
       .tagline {
         color: var(--muted);
@@ -203,7 +211,28 @@
       <div class="avatar" aria-hidden="true">
         <div class="avatar-line">C</div>
       </div>
-      <h1>Christian</h1>
+      <h1>
+        Christian
+        <svg
+          class="verified"
+          viewBox="0 0 24 24"
+          role="img"
+          aria-label="Verified"
+        >
+          <path
+            d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"
+            fill="#3b82f6"
+          />
+          <path
+            d="m9 12 2 2 4-4"
+            fill="none"
+            stroke="#ffffff"
+            stroke-width="2.2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </h1>
       <p class="tagline">
         Building in Public. <br />
         AI automation • Software • Business
